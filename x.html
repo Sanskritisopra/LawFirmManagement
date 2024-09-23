@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Client</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .required::after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Add Client</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="firstName" class="required">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="middleName">Middle Name</label>
+                    <input type="text" class="form-control" id="middleName" placeholder="Enter middle name">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="lastName" class="required">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="spouse">Spouse Name (if any)</label>
+                    <input type="text" class="form-control" id="spouse" placeholder="Enter spouse name">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="dateOfBirth" class="required">Date of Birth</label>
+                    <input type="date" class="form-control" id="dateOfBirth" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="children" class="required">Number of Children</label>
+                    <input type="number" class="form-control" id="children" placeholder="Enter number of children" min="0" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="occupation" class="required">Occupation</label>
+                    <input type="text" class="form-control" id="occupation" placeholder="Enter occupation" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="caseType" class="required">Case Type</label>
+                    <input type="text" class="form-control" id="caseType" placeholder="Enter case type" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="phn1" class="required">Phone Number 1</label>
+                    <input type="tel" class="form-control" id="phn1" placeholder="Enter phone number 1" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="phn2">Phone Number 2</label>
+                    <input type="tel" class="form-control" id="phn2" placeholder="Enter phone number 2">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email1" class="required">Email 1</label>
+                    <input type="email" class="form-control" id="email1" placeholder="Enter email 1" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email2">Email 2</label>
+                    <input type="email" class="form-control" id="email2" placeholder="Enter email 2">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address" class="required">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter address" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Client</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
